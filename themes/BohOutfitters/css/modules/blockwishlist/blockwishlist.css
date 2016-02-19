@@ -1,4 +1,4 @@
-/* lnk on detail product page */
+./* lnk on detail product page */
 #wishlist_button, #wishlist_button_nopop {
   font-weight: 700;
   -moz-border-radius: 5px;
@@ -13,7 +13,7 @@
     content: "\f08a";
     font: 400 15px/31px "FontAwesome";
     color: #fff;
-    background: #929292;
+    background: #F5BEB7;
     width: 30px;
     text-align: center;
     display: inline-block;
