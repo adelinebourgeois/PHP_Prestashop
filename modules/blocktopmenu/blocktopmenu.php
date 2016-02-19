@@ -68,6 +68,7 @@ class Blocktopmenu extends Module
         if (!parent::install() ||
             !$this->registerHook('header') ||
             !$this->registerHook('displayTop') ||
+            !$this->registerHook('displayTopColumn') ||
             !$this->registerHook('actionObjectCategoryUpdateAfter') ||
             !$this->registerHook('actionObjectCategoryDeleteAfter') ||
             !$this->registerHook('actionObjectCategoryAddAfter') ||
@@ -712,6 +713,14 @@ class Blocktopmenu extends Module
     }
 
     public function hookHeader()
+    {
+        $this->context->controller->addJS($this->_path.'js/hoverIntent.js');
+        $this->context->controller->addJS($this->_path.'js/superfish-modified.js');
+        $this->context->controller->addJS($this->_path.'js/blocktopmenu.js');
+        $this->context->controller->addCSS($this->_path.'css/blocktopmenu.css');
+        $this->context->controller->addCSS($this->_path.'css/superfish-modified.css');
+    }
+    public function hookDisplayTopColumn()
     {
         $this->context->controller->addJS($this->_path.'js/hoverIntent.js');
         $this->context->controller->addJS($this->_path.'js/superfish-modified.js');

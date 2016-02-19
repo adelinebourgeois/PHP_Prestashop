@@ -67,7 +67,8 @@ class HomeSlider extends Module
 		if (parent::install() &&
 			$this->registerHook('displayHeader') &&
 			$this->registerHook('displayTopColumn') &&
-			$this->registerHook('actionShopDataDuplication')
+			$this->registerHook('actionShopDataDuplication') &&
+			$this->registerHook('displayLeftColumn')
 		)
 		{
 			$shops = Shop::getContextListShopID();
@@ -604,6 +605,11 @@ class HomeSlider extends Module
 	public function hookdisplayTop($params)
 	{
 		return $this->hookdisplayTopColumn($params);
+	}
+
+	public function hookdisplayLeftColumn($params)
+	{
+		return $this->hookdisplayLeftColumn($params);
 	}
 
 	public function hookdisplayTopColumn($params)
