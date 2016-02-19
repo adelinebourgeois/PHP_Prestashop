@@ -29,11 +29,10 @@
       width: 100%; } }
   .shopping_cart > a:first-child {
     padding: 7px 10px 14px 16px;
-    background: #333;
+    background: #6AD4FF;
     display: block;
     font-weight: bold;
     color: #777777;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
     overflow: hidden; }
     @media (min-width: 768px) and (max-width: 991px) {
       .shopping_cart > a:first-child span.ajax_cart_product_txt, .shopping_cart > a:first-child span.ajax_cart_product_txt_s {
@@ -124,7 +123,7 @@
   margin: 0;
   padding: 10px 20px; }
 .cart_block .cart-prices {
-  border-top: 1px solid #d6d4d4;
+  background: url(https://cdn.shopify.com/s/files/1/0545/2129/t/6/assets/border.png?3056709309779511812) left top repeat-x;
   font-weight: bold;
   padding: 10px 20px 22px 20px; }
   .cart_block .cart-prices .cart-prices-line {
@@ -136,8 +135,7 @@
 .cart_block .cart-buttons {
   overflow: hidden;
   padding: 20px 20px 10px 20px;
-  margin: 0;
-  background: #f6f6f6; }
+  margin: 0;}
   .cart_block .cart-buttons a {
     width: 100%;
     float: left;
@@ -146,15 +144,13 @@
     margin-right: 10px; }
     .cart_block .cart-buttons a#button_order_cart {
       margin-right: 0;
-      border: none; }
+      border: none;
+      }
       .cart_block .cart-buttons a#button_order_cart span {
         padding: 7px 0;
         font-size: 1.1em;
-        border: solid 1px #63c473;
-        background: #43b155; }
+        background-color: #444;}
       .cart_block .cart-buttons a#button_order_cart:hover span {
-        border: solid 1px #358c43;
-        background: #2e7a3a;
         color: #fff; }
 
 /*******************************************************************
